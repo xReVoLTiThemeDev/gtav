@@ -12,81 +12,42 @@ var main = (function () {
                 this[key] = options[key] || Singleton.defaultOptions[key];
             }
         };
-    Singleton.defaultOptions = {
-        general_help: "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.",
-        ls_help: "List information about the files and folders (the current directory by default).",
-        cat_help: "Read FILE(s) content and print it to the standard output (screen).",
-        whoami_help: "Print the user name associated with the current effective user ID and more info.",
-        date_help: "Print the system date and time.",
-        help_help: "Print this menu.",
-        clear_help: "Clear the terminal screen.",
-        reboot_help: "Reboot the system.",
-        cd_help: "Change the current working directory.",
-        mv_help: "Move (rename) files.",
-        rm_help: "Remove files or directories.",
-        rmdir_help: "Remove directory, this command will only work if the folders are empty.",
-        touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
-        sudo_help: "Execute a command as the superuser.",
-        setup_help: "Please wait while the terminal is setup.",
-        cmds_help: "Please type !cmds for a list of commands to use in GTA V Online.",
-        /* GENERAL - START */
-        gtav_cmds_general_cmds_help: "All GTA V Online commands, avalible now:",
-        gtav_cmds_general_cmds_info_start: "",
-        gtav_cmds_general_cmds_money_help: "Please type !money on/off in the chat.",
-        gtav_cmds_general_cmds_spawn_vehicle_help: "Spawn Vehicle",
-        gtav_cmds_general_cmds_spawn_object_help: "Spawn Object",
-        gtav_cmds_general_cmds_spawn_ped_help: "Spawn Ped",
-        gtav_cmds_general_cmds_spawn_bodyguard_help: "Spawn Bodyguard",
-        gtav_cmds_general_cmds_weapons_help: "Give Weapons",
-        gtav_cmds_general_cmds_info_end: "",
-        /* GENERAL - END */
-        /* VEHICLE - START */
-        gtav_cmds_vehicle_cmds_help: "All GTA V Online commands, avalible now: XXXXXXXXXXXXXXXXX",
-        gtav_cmds_vehicle_cmds_info_start: "",
-        gtav_cmds_vehicle_cmds_vehicle_upgrade_help: "Vehicle Upgrade",
-        gtav_cmds_vehicle_cmds_vehicle_repair_help: "Vehicle Repair",
-        gtav_cmds_vehicle_cmds_vehicle_boost_help: "Vehicle Boost",
-        gtav_cmds_vehicle_cmds_vehicle_jump_help: "Vehicle Jump",
-        gtav_cmds_vehicle_cmds_info_end: "",
-        /* VEHICLE - END */
-        /* GLOBAL START */
-        gtav_cmds_global_cmds_info_start: "",
-        gtav_cmds_global_cmds_copsturnblind_help: "Cops Turn Blind Eye",
-        gtav_cmds_global_cmds_offtheradar_help: "Off The Radar",
-        gtav_cmds_global_cmds_info_end: "",
-        /* GLOBAL END */
-        /* WEATHER START */
-        gtav_cmds_weather_cmds_info_start: "",
-        gtav_cmds_weather_cmds_weather_day_help: "Weather Day",
-        gtav_cmds_weather_cmds_weather_night_help: "Weather Night",
-        gtav_cmds_weather_cmds_weather_halloween_help: "Weather Halloween",
-        gtav_cmds_weather_cmds_weather_snow_help: "Weather Snow",
-        gtav_cmds_weather_cmds_info_end: "",
-        /* WEATHER END */
-        welcome: "Welcome to xReVoLT - iTheme's GTA V Modded Lobby Console Simulation!\n\nPlease take some time out to visit my website located in the bottom-right hand corner.\nEnjoy browsing through the console simulator.\nIn order to get started, please type <b><i>!setup<i><b>.",
-        internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
-        welcome_file_name: "Welcome.txt",
-        invalid_command_message: "<value>: command not found.",
-        setup_message: "\nDownloading necessary terminal files... \n = 1% \n ======= 7% \n ============ 12% \n ===================== 21% \n ========================== 26% \n ================================== 34% \n =========================================== 43% \n ================================================== 50% \n ========================================================== 58% \n ============================================================================== 78% \n ============================================================================================ 92% \n ==================================================================================================== 100% \n Downloaded necessary terminal files... DONE! \n\n Unpacking necessary terminal files... \n = 1% \n===================================================================================================== 100% \n Unpacking necessary terminal files...DONE! \n\nInstalling extension...\n = 1% \n ============================================== 45% \n===================================================================================================== 100% \nInstalling extension.... DONE! \n\n\nPlease type !cmds for a list of commands to use in GTA V Online.\nPlease type !help for a list of commands to use in the console simulation.\n",
-        cmds_message: "\nThis is a test.\n",
-        reboot_message: "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
-        permission_denied_message: "Unable to '<value>', permission denied.",
-        sudo_message: "Unable to sudo using a web client.",
-        usage: "Usage",
-        file: "file",
-        file_not_found: "File '<value>' not found.",
-        username: "Username",
-        hostname: "Host",
-        platform: "Platform",
-        accesible_cores: "Accessible cores",
-        accesible_gpu: "Accesible GPU cores",
-        language: "Language",
-        value_token: "<value>",
-        host: "xrevoltithemedev.github.io",
-        user: "guest",
-        is_root: false,
-        type_delay: 20
-    };
+        Singleton.defaultOptions = {
+            general_help: "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.",
+            ls_help: "List information about the files and folders (the current directory by default).",
+            cat_help: "Read FILE(s) content and print it to the standard output (screen).",
+            whoami_help: "Print the user name associated with the current effective user ID and more info.",
+            date_help: "Print the system date and time.",
+            help_help: "Print this menu.",
+            clear_help: "Clear the terminal screen.",
+            reboot_help: "Reboot the system.",
+            cd_help: "Change the current working directory.",
+            mv_help: "Move (rename) files.",
+            rm_help: "Remove files or directories.",
+            rmdir_help: "Remove directory, this command will only work if the folders are empty.",
+            touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
+            sudo_help: "Execute a command as the superuser.",
+            welcome: "Welcome to FTW (Fake Terminal Website)! :)\nIn order for you to start customizing the texts, go to js/main.js and replace the texts located at the configs var.\nIn that same file, you can define all the fake files you want as well as their content. This files will appear on the sidenav.\nAlso, don't forget to change the colors on the css/main.css file as well as the website title on the index.html file.\nNow in order to get started, feel free to either execute the 'help' command or use the more user-friendly colored sidenav at your left.\nIn order to skip text rolling, double click/touch anywhere.",
+            internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
+            welcome_file_name: "welcome_message.txt",
+            invalid_command_message: "<value>: command not found.",
+            reboot_message: "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
+            permission_denied_message: "Unable to '<value>', permission denied.",
+            sudo_message: "Unable to sudo using a web client.",
+            usage: "Usage",
+            file: "file",
+            file_not_found: "File '<value>' not found.",
+            username: "Username",
+            hostname: "Host",
+            platform: "Platform",
+            accesible_cores: "Accessible cores",
+            language: "Language",
+            value_token: "<value>",
+            host: "example.com",
+            user: "guest",
+            is_root: false,
+            type_delay: 20
+        };
         return {
             getInstance: function (options) {
                 instance === void 0 && (instance = new Singleton(options));
@@ -103,11 +64,11 @@ var main = (function () {
             }
         };
         Singleton.defaultOptions = {
-            "About.txt": "This site was made for whenever you join a session that xReVoLT-iTheme is in,\n you might be gifted with a modded GTA V session! \n I have made this website so players can search for commands with ease in this console simulation.",
-            "Help.txt": "For a list of commands, please type <b><i>!cmds<i><b>",
-            "Contact.txt": "xrevoltithemedev@gmail.com",
-            "Commands.txt": "Please fill up this section",
-            "Visit_My_Website.txt": "https://bit.ly/33bNliV"
+            "about.txt": "This website was made using only pure JavaScript with no extra libraries.\nI made it dynamic so anyone can use it, just download it from GitHub and change the config text according to your needs.\nIf you manage to find any bugs or security issues feel free to email me: luisbraganca@protonmail.com",
+            "getting_started.txt": "First, go to js/main.js and replace all the text on both singleton vars.\n- configs: All the text used on the website.\n- files: All the fake files used on the website. These files are also used to be listed on the sidenav.\nAlso please notice if a file content is a raw URL, when clicked/concatenated it will be opened on a new tab.\nDon't forget also to:\n- Change the page title on the index.html file\n- Change the website color on the css/main.css\n- Change the images located at the img folder. The suggested sizes are 150x150 for the avatar and 32x32/16x16 for the favicon.",
+            "contact.txt": "mail@example.com",
+            "social_network_1.txt": "https://www.socialite.com/username/",
+            "social_network_2.txt": "https://example.com/profile/9382/"
         };
         return {
             getInstance: function (options) {
@@ -164,76 +125,23 @@ var main = (function () {
     InvalidArgumentException.prototype.constructor = InvalidArgumentException;
 
     var cmds = {
-        LS: { value: "!ls", help: configs.getInstance().ls_help },
-        CAT: { value: "!cat", help: configs.getInstance().cat_help },
-        WHOAMI: { value: "!whoami", help: configs.getInstance().whoami_help },
-        DATE: { value: "!date", help: configs.getInstance().date_help },
-        HELP: { value: "!help", help: configs.getInstance().help_help },
-        SETUP: { value: "!setup", help: configs.getInstance().setup_help },
-        CMDS: { value: "!cmds", help: configs.getInstance().cmds_help },
-        CLEAR: { value: "!clear", help: configs.getInstance().clear_help },
-        REBOOT: { value: "!reboot", help: configs.getInstance().reboot_help },
-        CD: { value: "!cd", help: configs.getInstance().cd_help },
-        MV: { value: "!mv", help: configs.getInstance().mv_help },
-        RM: { value: "!rm", help: configs.getInstance().rm_help },
-        RMDIR: { value: "!rmdir", help: configs.getInstance().rmdir_help },
-        TOUCH: { value: "!touch", help: configs.getInstance().touch_help },
-        SUDO: { value: "!sudo", help: configs.getInstance().sudo_help }
+        LS: { value: "ls", help: configs.getInstance().ls_help },
+        CAT: { value: "cat", help: configs.getInstance().cat_help },
+        WHOAMI: { value: "whoami", help: configs.getInstance().whoami_help },
+        DATE: { value: "date", help: configs.getInstance().date_help },
+        HELP: { value: "help", help: configs.getInstance().help_help },
+        CLEAR: { value: "clear", help: configs.getInstance().clear_help },
+        REBOOT: { value: "reboot", help: configs.getInstance().reboot_help },
+        CD: { value: "cd", help: configs.getInstance().cd_help },
+        MV: { value: "mv", help: configs.getInstance().mv_help },
+        RM: { value: "rm", help: configs.getInstance().rm_help },
+        RMDIR: { value: "rmdir", help: configs.getInstance().rmdir_help },
+        TOUCH: { value: "touch", help: configs.getInstance().touch_help },
+        SUDO: { value: "sudo", help: configs.getInstance().sudo_help }
     };
 
-    var gtav_cmds_general_cmds = {
-        GENERALSTART: { value: "============= GENERAL COMMANDS =============", help: configs.getInstance().gtav_cmds_general_cmds_info_start },
-        MONEY: { value: "!money", help: configs.getInstance().gtav_cmds_general_cmds_money_help },
-        SPAWNVEHICLE: { value: "!spawn vehicle", help: configs.getInstance().gtav_cmds_general_cmds_spawn_vehicle_help },
-        SPAWNOBJECT: { value: "!spawn object", help: configs.getInstance().gtav_cmds_general_cmds_spawn_object_help },
-        SPAWNPED: { value: "!spawn ped", help: configs.getInstance().gtav_cmds_general_cmds_spawn_ped_help },
-        SPAWNBODYGUARD: { value: "!spawn bodyguard", help: configs.getInstance().gtav_cmds_general_cmds_spawn_bodyguard_help },
-        WEAPONS: { value: "!weapons", help: configs.getInstance().gtav_cmds_general_cmds_weapons_help },
-        GENERALEND: { value: "============================================", help: configs.getInstance().gtav_cmds_general_cmds_info_end },
-        VEHICLESTART: { value: "============= VEHICLE COMMANDS =============", help: configs.getInstance().gtav_cmds_vehicle_cmds_info_start },
-        VEHICLEUPGRADE: { value: "!vehicle upgrade", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_upgrade_help },
-        VEHICLEREPAIR: { value: "!vehicle repair", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_repair_help },
-        VEHICLEBOOST: { value: "!vehicle boost", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_boost_help },
-        VEHICLEJUMP: { value: "!vehicle jump", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_jump_help },
-        VEHICLEEND: { value: "============================================", help: configs.getInstance().gtav_cmds_vehicle_cmds_info_end },
-        GLOBALSTART: { value: "============= GLOBAL COMMANDS ==============", help: configs.getInstance().gtav_cmds_global_cmds_info_start },
-        COPSTURNBLIND: { value: "!copsturnblind", help: configs.getInstance().gtav_cmds_global_cmds_copsturnblind_help },
-        OFFTHERADAR: { value: "!offtheradar", help: configs.getInstance().gtav_cmds_global_cmds_offtheradar_help },
-        GLOBALEND: { value: "============================================", help: configs.getInstance().gtav_cmds_global_cmds_info_end },
-        WEATHERSTART: { value: "============= WEATHER COMMANDS =============", help: configs.getInstance().gtav_cmds_weather_cmds_info_start },
-        WEATHERDAY: { value: "!weather day", help: configs.getInstance().gtav_cmds_weather_cmds_weather_day_help },
-        WEATHERNIGHT: { value: "!weather night", help: configs.getInstance().gtav_cmds_weather_cmds_weather_night_help },
-        WEATHERHALLOWEEN: { value: "!weather halloween", help: configs.getInstance().gtav_cmds_weather_cmds_weather_halloween_help },
-        WEATHERSNOW: { value: "!weather snow", help: configs.getInstance().gtav_cmds_weather_cmds_weather_snow_help },
-        WEATHEREND: { value: "============================================", help: configs.getInstance().gtav_cmds_weather_cmds_info_end },
-    };
 
-    var gtav_cmds_vehicle_cmds = {
-        VEHICLESTART: { value: "============= VEHICLE COMMANDS =============", help: configs.getInstance().gtav_cmds_vehicle_cmds_info_start },
-        VEHICLEUPGRADE: { value: "!vehicle upgrade", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_upgrade_help },
-        VEHICLEREPAIR: { value: "!vehicle repair", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_repair_help },
-        VEHICLEBOOST: { value: "!vehicle boost", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_boost_help },
-        VEHICLEJUMP: { value: "!vehicle jump", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_jump_help },
-        VEHICLEEND: { value: "============================================", help: configs.getInstance().gtav_cmds_vehicle_cmds_info_end },
-    };
-
-    var gtav_cmds_global_cmds = {
-        GLOBALSTART: { value: "============= GLOBAL COMMANDS =============", help: configs.getInstance().gtav_cmds_global_cmds_info_start },
-        COPSTURNBLIND: { value: "!copsturnblind", help: configs.getInstance().gtav_cmds_global_cmds_copsturnblind_help },
-        OFFTHERADAR: { value: "!offtheradar", help: configs.getInstance().gtav_cmds_global_cmds_offtheradar_help },
-        GLOBALEND: { value: "============================================", help: configs.getInstance().gtav_cmds_global_cmds_info_end },
-    };
-
-    var gtav_cmds_weather_cmds = {
-        WEATHERSTART: { value: "============= WEATHER COMMANDS =============", help: configs.getInstance().gtav_cmds_weather_cmds_info_start },
-        WEATHERDAY: { value: "!weather day", help: configs.getInstance().gtav_cmds_weather_cmds_weather_day_help },
-        WEATHERNIGHT: { value: "!weather night", help: configs.getInstance().gtav_cmds_weather_cmds_weather_night_help },
-        WEATHERHALLOWEEN: { value: "!weather halloween", help: configs.getInstance().gtav_cmds_weather_cmds_weather_halloween_help },
-        WEATHERSNOW: { value: "!weather snow", help: configs.getInstance().gtav_cmds_weather_cmds_weather_snow_help },
-        WEATHEREND: { value: "============================================", help: configs.getInstance().gtav_cmds_weather_cmds_info_end },
-    };
-
-    var Terminal = function (prompt, cmdLine, output, sidenav, gtavPic, user, host, root, outputTimer) {
+    var Terminal = function (prompt, cmdLine, output, sidenav, profilePic, user, host, root, outputTimer) {
         if (!(prompt instanceof Node) || prompt.nodeName.toUpperCase() !== "DIV") {
             throw new InvalidArgumentException("Invalid value " + prompt + " for argument 'prompt'.");
         }
@@ -246,11 +154,11 @@ var main = (function () {
         if (!(sidenav instanceof Node) || sidenav.nodeName.toUpperCase() !== "DIV") {
             throw new InvalidArgumentException("Invalid value " + sidenav + " for argument 'sidenav'.");
         }
-        if (!(gtavPic instanceof Node) || gtavPic.nodeName.toUpperCase() !== "IMG") {
-            throw new InvalidArgumentException("Invalid value " + gtavPic + " for argument 'gtavPic'.");
+        if (!(profilePic instanceof Node) || profilePic.nodeName.toUpperCase() !== "IMG") {
+            throw new InvalidArgumentException("Invalid value " + profilePic + " for argument 'profilePic'.");
         }
         (typeof user === "string" && typeof host === "string") && (this.completePrompt = user + "@" + host + ":~" + (root ? "#" : "$"));
-        this.gtavPic = gtavPic;
+        this.profilePic = profilePic;
         this.prompt = prompt;
         this.cmdLine = cmdLine;
         this.output = output;
@@ -272,7 +180,7 @@ var main = (function () {
     };
 
     Terminal.prototype.init = function () {
-        isPhone && (document.getElementById("websiteImg").style.display = "none");
+        isPhone && (document.getElementById("githubImg").style.display = "none");
         this.sidenav.addEventListener("click", ignoreEvent);
         this.cmdLine.disabled = true;
         this.sidenavElements.forEach(function (elem) {
@@ -322,7 +230,7 @@ var main = (function () {
             Terminal.makeElementDisappear(element);
             element.onclick = function (file, event) {
                 this.handleSidenav(event);
-                this.cmdLine.value = "!cat " + file + " ";
+                this.cmdLine.value = "cat " + file + " ";
                 this.handleCmd();
             }.bind(this, file);
             element.appendChild(document.createTextNode(capFirst(file.replace(/\.[^/.]+$/, "").replace(/_/g, " "))));
@@ -335,7 +243,7 @@ var main = (function () {
 
     Terminal.prototype.handleSidenav = function (event) {
         if (this.sidenavOpen) {
-            this.gtavPic.style.opacity = 0;
+            this.profilePic.style.opacity = 0;
             this.sidenavElements.forEach(Terminal.makeElementDisappear);
             this.sidenav.style.width = "50px";
             document.getElementById("sidenavBtn").innerHTML = "&#9776;";
@@ -344,7 +252,7 @@ var main = (function () {
             this.sidenav.style.width = "300px";
             this.sidenavElements.forEach(Terminal.makeElementAppear);
             document.getElementById("sidenavBtn").innerHTML = "&times;";
-            this.gtavPic.style.opacity = 1;
+            this.profilePic.style.opacity = 1;
             this.sidenavOpen = true;
         }
         document.getElementById("sidenavBtn").blur();
@@ -430,12 +338,6 @@ var main = (function () {
             case cmds.HELP.value:
                 this.help();
                 break;
-            case cmds.SETUP.value:
-                this.setup();
-                break;
-            case cmds.CMDS.value:
-                this.cmds();
-                break;
             case cmds.CLEAR.value:
                 this.clear();
                 break;
@@ -498,30 +400,6 @@ var main = (function () {
         }
         this.type(result.trim(), this.unlock.bind(this));
     };
-
-    Terminal.prototype.setup = function () {
-        this.type(configs.getInstance().setup_message, this.unlock.bind(this));
-    };
-
-    /* GENERAL */
-    Terminal.prototype.cmds = function () {
-        var result = configs.getInstance().gtav_cmds_general_cmds_help + "\n\n";
-        for (var cmd in gtav_cmds_general_cmds) {
-            result += gtav_cmds_general_cmds[cmd].value + " - " + gtav_cmds_general_cmds[cmd].help + "\n";
-        }
-        this.type(result.trim(), this.unlock.bind(this));
-    };
-
-    /* VEHICLE 
-    Terminal.prototype.vehicle = function () {
-        var result = configs.getInstance().gtav_cmds_vehicle_cmds_help + "\n\n";
-        for (var cmd in gtav_cmds_vehicle_cmds) {
-            result += gtav_cmds_vehicle_cmds[cmd].value + " - " + gtav_cmds_vehicle_cmds[cmd].help + "\n";
-        }
-        this.type(result.trim(), this.unlock.bind(this));
-    };
-
-    */
 
     Terminal.prototype.clear = function () {
         this.output.textContent = "";
@@ -614,7 +492,7 @@ var main = (function () {
                 document.getElementById("cmdline"),
                 document.getElementById("output"),
                 document.getElementById("sidenav"),
-                document.getElementById("gtavPic"),
+                document.getElementById("profilePic"),
                 configs.getInstance().user,
                 configs.getInstance().host,
                 configs.getInstance().is_root,

@@ -66,10 +66,12 @@ body {
     box-flex: 1;
 }
 
-#githubImg img {
+#websiteImg img {
     position: fixed;
     bottom: 0; right: 0;
     border: 0;
+    height: 8%;
+    width: 10%;
 }
 
 /* SIDE NAV */
@@ -107,6 +109,11 @@ body {
 
 #sidenav img:focus {
     outline: none;
+}
+
+#sidnav .gtavPic img {
+    width: 123px;
+    height: 150px;
 }
 
 #sidenav button {
