@@ -28,7 +28,7 @@ var main = (function () {
         touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
         sudo_help: "Execute a command as the superuser.",
         setup_help: "Please wait while the terminal is setup.",
-        cmds_help: "Please type !cmds for a list of commands to use in GTA V Online.",
+        cmds_help: "Displays all GTA V commands.",
         /* GENERAL - START */
         gtav_cmds_general_cmds_help: "All GTA V Online commands, avalible now:",
         gtav_cmds_general_cmds_info_start: "",
@@ -64,11 +64,11 @@ var main = (function () {
         gtav_cmds_weather_cmds_info_end: "",
         gtav_cmds_more_cmds: "",
         /* WEATHER END */
-        welcome: "Welcome to xReVoLT - iTheme's GTA V Modded Lobby Console Simulation!\n\nPlease take some time out to visit my website located in the bottom-right hand corner.\nEnjoy browsing through the console simulator.\nIn order to get started, please type <b><i>!setup<i><b>.",
+        welcome: "Welcome to xReVoLT - iTheme's GTA V Modded Lobby Console Simulation!\n\nPlease take some time out to visit my website located in the bottom-right hand corner.\nEnjoy browsing through the console simulator.\nIn order to get started, please type \"!setup\".",
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "Welcome.txt",
         invalid_command_message: "<value>: command not found.",
-        setup_message: "\nDownloading necessary terminal files... \n = 1% \n ======= 7% \n ============ 12% \n ===================== 21% \n ========================== 26% \n ================================== 34% \n =========================================== 43% \n ================================================== 50% \n ========================================================== 58% \n ============================================================================== 78% \n ============================================================================================ 92% \n ==================================================================================================== 100% \n Downloaded necessary terminal files... DONE! \n\n Unpacking necessary terminal files... \n = 1% \n===================================================================================================== 100% \n Unpacking necessary terminal files...DONE! \n\nInstalling extension...\n = 1% \n ============================================== 45% \n===================================================================================================== 100% \nInstalling extension.... DONE! \n\n\nPlease type !cmds for a list of commands to use in GTA V Online.\nPlease type !help for a list of commands to use in the console simulation.\n",
+        setup_message: "\nDownloading necessary terminal files... \n = 1% \n ======= 7% \n ============ 12% \n ===================== 21% \n ========================== 26% \n ================================== 34% \n =========================================== 43% \n ================================================== 50% \n ========================================================== 58% \n ============================================================================== 78% \n ============================================================================================ 92% \n ==================================================================================================== 100% \n Downloaded necessary terminal files... DONE! \n\n Unpacking necessary terminal files... \n = 1% \n===================================================================================================== 100% \n Unpacking necessary terminal files...DONE! \n\nInstalling extension...\n = 1% \n ============================================== 45% \n===================================================================================================== 100% \nInstalling extension.... DONE! \n\nTo skip the text loading animation, simply double-click the screen.\n\nPlease type \"!cmds\" for a list of commands to use in GTA V Online.\nPlease type \"!help\" for a list of commands to use in the console simulation.\n",
         cmds_message: "\nThis is a test.\n",
         reboot_message: "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
         permission_denied_message: "Unable to '<value>', permission denied.",
@@ -105,9 +105,9 @@ var main = (function () {
         };
         Singleton.defaultOptions = {
             "About.txt": "This site was made for whenever you join a session that xReVoLT-iTheme is in,\n you might be gifted with a modded GTA V session! \n I have made this website so players can search for commands with ease in this console simulation.",
-            "Help.txt": "For a list of commands, please type <b><i>!cmds<i><b>",
+            "Help.txt": "For a list of commands, please type \"!help\".",
             "Contact.txt": "xrevoltithemedev@gmail.com",
-            "Commands.txt": "Please fill up this section",
+            /*"Commands.txt": "Please fill up this section",*/
             "Visit_My_Website.txt": "https://bit.ly/33bNliV"
         };
         return {

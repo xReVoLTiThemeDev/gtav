@@ -97,6 +97,50 @@ body {
     transition: 0.3s;
     padding-top: 60px;
 }
+
+#sidenav .version {
+    bottom: 0; left: 0;
+    border: 0;
+    padding: 5px;
+    font-style: bold, italic;
+    font-size: 10px;
+    position: fixed;
+    -webkit-animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation:Border 5s infinite alternate;
+    -webkit-animation:Background 5s infinite alternate;
+
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    transition: 0.3s;
+    opacity: 0.8;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+#version {
+    border: 0;
+    padding: 5px;
+    font-style: bold, italic;
+    font-size: 11px;
+    -webkit-animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation:Border 5s infinite alternate;
+    -webkit-animation:Background 5s infinite alternate;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 75px;
+    transition: 0.3s;
+    opacity: 0.8;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
 #sidenav img {
     display: block;
     position: absolute;
@@ -128,7 +172,7 @@ body {
     border:none;
 }
 #sidenav button:hover {
-    color: #442e00;
+    color: #212121;
 }
 
 @media screen and (max-height: 450px) {
@@ -144,7 +188,11 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    #githubImg img {
+    #gtavPic img {
+        transform: translateX(900px);
+    }
+
+    #version {
         transform: translateX(900px);
     }
 
@@ -152,3 +200,29 @@ body {
         margin-right: 0;
     }
 }
+
+/* Color Rainbow Text */
+
+@-webkit-keyframes Background {
+    0% {color: #C1392B;} /* DarkRed */
+    18% {color: #212121;} /* Orange */
+    36% {color: #C1392B;} /* Yellow */
+    52% {color: #212121;} /* Green */
+    70% {color: #C1392B;} /* Light Blue */
+    88% {color: #212121;} /* Blue */
+    100% {color: #C1392B}/* Purple */
+}
+
+.rainbow {
+  -webkit-animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  font-size: 18px;
+}
+
+.rainbow .extra {
+  -webkit-animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation:Border 5s infinite alternate;
+  -webkit-animation:Background 5s infinite alternate;
+}
+
