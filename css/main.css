@@ -121,6 +121,26 @@ body {
     transition: 0.3s;
 }
 
+#sidenav .versionx {
+    border: 0;
+    padding: 5px;
+    font-style: bold, italic;
+    font-size: 11px;
+    -webkit-animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation:Border 5s infinite alternate;
+    -webkit-animation:Background 5s infinite alternate;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 65px;
+    transition: 0.3s;
+    opacity: 0.8;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
 #version {
     border: 0;
     padding: 5px;
