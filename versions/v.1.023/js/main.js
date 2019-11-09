@@ -34,7 +34,7 @@ var main = (function () {
         gtav_cmds_general_cmds_info_start: "",
         gtav_cmds_general_cmds_money_help: "Spawn money bags with value of $2,500. Type this command in terminal to learn more.",
         gtav_cmds_general_cmds_spawn_vehicle_help: "Spawn Vehicle (vehicle_name)-Type this command in terminal to learn more.",
-        gtav_cmds_general_cmds_spawn_vehicle: "Once you've read the spawn_vehicle.txt, type this command in GTA V's chat.",
+        gtav_cmds_general_cmds_spawn_vehicle: "Once you've read the spawn_vechicle.txt, type this command in GTA V's chat.",
         gtav_cmds_general_cmds_spawn_object_help: "Spawn Object (object_name) - Type this command in terminal to learn more.",
         gtav_cmds_general_cmds_spawn_object: "Once you've read the spawn_object.txt, type the command in GTA V's chat.",
         gtav_cmds_general_cmds_spawn_ped_help: "Spawn Ped (ped_name) - Type this command in terminal to learn more.",
@@ -88,7 +88,6 @@ var main = (function () {
         value_token: "<value>",
         host: "xrevoltithemedev.github.io",
         user: "guest",
-        changelog: "Changelog is avalible on the changelog.txt tab.",
         is_root: false,
         type_delay: 20
     };
@@ -571,7 +570,7 @@ var main = (function () {
     };
 
     Terminal.prototype.changelog = function () {
-        this.type(configs.getInstance().changelog, this.unlock.bind(this));
+        this.type(configs.getInstance().gtav_cmds_general, this.unlock.bind(this));
         var win = window.open("https://xrevoltithemedev.github.io/gtav/changelog.txt", '_blank');
         win.focus();
     };

@@ -4,7 +4,6 @@
 
 - Added 4 new commands - !spawn_vehicle, !spawn_object, !spawn_ped, !changelog on main.js 
 - Added "beta" tag under the version on index.html
-- Added a changelog page
 
 ==================================================================
 
