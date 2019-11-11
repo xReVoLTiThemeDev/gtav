@@ -2,7 +2,7 @@
 
 11/9/2019 - 12:50:34
 
-- Added 4 new commands - !spawn_vehicle, !spawn_object, !spawn_ped, !changelog function (s) 
+- Added 4 new commands - !spawn_vehicle, !spawn_object, !spawn_ped, !changelog on main.js 
 - Added "beta" tag under the version on index.html
 - Added a changelog page
 
@@ -12,8 +12,8 @@
 
 11/9/2019 - 13:22:11
 
-- Fixed pesty bugs that broke invalidCommand function(s)
-- Fixed 3 commands - !spawn_vehicle, !spawn_object, !spawn ped on main.js
+- Fixed pesty bugs that broke invalidCommand function
+- Fixed 3 commands - !spawn vehicle, !spawn object, !spawn ped on main.js
 - Added archieve versions of the website
 
 ==================================================================
@@ -28,7 +28,7 @@
 
 ============================= v1.025 =============================
 
-11/9/2019 - 13:28:45
+11/9/2019 - 13:29:12
 
 - Fixed "beta" string on index.html
 
@@ -36,10 +36,10 @@
 
 ============================= v1.026 =============================
 
-11/9/2019 - 13:28:45
+11/9/2019 - 14:43:31
 
-- Added spawn_bodyguard function(s)
-- Renamed !spawn_vehicle, !spawn_object, !spawn_ped command(s)
+- Added spawn_bodyguard function
+- Renamed !spawn_vehicle, !spawn_object, spawn_ped commands
 
 ==================================================================
 
@@ -47,30 +47,16 @@
 
 11/9/2019 - 16:38:45
 
-- Added money function(s)
+- Added money function
 
 ==================================================================
 
 ============================= v1.100 =============================
 
-11/9/2019 - 23:53:21
+11/10/2019 - 03:25:47
 
-- Added !weapons, !vehicle_upgrade, !vehicle_repair, !vehicle_boost, !vehicle_jump, !copsturnblind, !offtheradar, !weather_day, !weather_night, !weather_halloween, !weather_snow function(s) 
-
-==================================================================
-
-============================= v1.101 =============================
-
-11/10/2019 - 00:38:45
-
-- Added version and github function(s)
-
-==================================================================
-
-============================= v1.102 =============================
-
-11/10/2019 - 01:30:06
-
-- Added a version page(copy of terminal simulator)
+- Added weapons, vehicle_upgrade, vehicle_repair, vehicle_boost, vehicle_jump, !copsturnblind, !offtheradar, !weather_day, !weather_night, !weather_halloween, and finally, !weather_snow as functions in ther terminal commands.
+- Updated "welcome.txt" to have a tad bit cleaner look
+- Fixed typos
 
 ==================================================================

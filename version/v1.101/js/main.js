@@ -105,7 +105,7 @@ var main = (function () {
         host: "xrevoltithemedev.github.io",
         user: "guest",
         changelog: "Changelog is avalible on the changelog.txt tab.",
-        version: "Build Version: 1.102 Alpha. Type \"!changelog\" for more information.",
+        version: "Build Version: 1.101 Alpha. Type \"!changelog\" for more information.",
         github: "The project's source code is on the previous tab. Go there for more  information.",
         is_root: false,
         type_delay: 20
@@ -210,6 +210,9 @@ var main = (function () {
         WEATHER_NIGHT: { value: "!weather_night", help: configs.getInstance().gtav_cmds_weather_cmds_weather_night_help },
         WEATHER_HALLOWEEN: { value: "!weather_halloween", help: configs.getInstance().gtav_cmds_weather_cmds_weather_halloween_help },
         WEATHER_SNOW: { value: "!weather_snow", help: configs.getInstance().gtav_cmds_weather_cmds_weather_snow_help },
+        VERSION: { value: "!version", help: configs.getInstance().version_help },
+        CHANGELOG: { value: "!changelog", help: configs.getInstance().changelog_help },
+        GITHUB: { value: "!github", help: configs.getInstance().github_help },
         CLEAR: { value: "!clear", help: configs.getInstance().clear_help },
         REBOOT: { value: "!reboot", help: configs.getInstance().reboot_help },
         CD: { value: "!cd", help: configs.getInstance().cd_help },
@@ -217,10 +220,7 @@ var main = (function () {
         RM: { value: "!rm", help: configs.getInstance().rm_help },
         RMDIR: { value: "!rmdir", help: configs.getInstance().rmdir_help },
         TOUCH: { value: "!touch", help: configs.getInstance().touch_help },
-        SUDO: { value: "!sudo", help: configs.getInstance().sudo_help },
-        VERSION: { value: "!version", help: configs.getInstance().version_help },
-        CHANGELOG: { value: "!changelog", help: configs.getInstance().changelog_help },
-        GITHUB: { value: "!github", help: configs.getInstance().github_help },
+        SUDO: { value: "!sudo", help: configs.getInstance().sudo_help }
     };
 
     var gtav_cmds_general_cmds = {

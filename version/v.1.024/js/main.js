@@ -27,67 +27,51 @@ var main = (function () {
         rmdir_help: "Remove directory, this command will only work if the folders are empty.",
         touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
         sudo_help: "Execute a command as the superuser.",
-        setup_help: "Must type this command to unlock other commands.",
+        setup_help: "<b>Must type this command to unlock other commands.</b>",
         cmds_help: "Displays all GTA V commands.",
-        changelog_help: "View all the changes of the project.",
-        github_help: "The source code is avalible on GitHub.",
-        version_help: "Displays the version of the project.",
         /* GENERAL - START */
         gtav_cmds_general_cmds_help: "All GTA V Online commands, avalible now:",
         gtav_cmds_general_cmds_info_start: "",
         gtav_cmds_general_cmds_money_help: "Spawn money bags with value of $2,500. Type this command in terminal to learn more.",
-        gtav_cmds_general_cmds_money: "Please go to Los Santos Customs and type \"!money on\" in GTA V's chat. *MUST BE AT LSC FOR IT TO WORK*",
-        gtav_cmds_general_cmds_spawn_vehicle_help: "(vehicle_name)-Type this command in terminal to learn more.",
-        gtav_cmds_general_cmds_spawn_vehicle: "Once you've read the spawn_vehicle.txt, type your new command in GTA V's chat.",
-        gtav_cmds_general_cmds_spawn_object_help: "(object_name) - Type this command in terminal to learn more.",
-        gtav_cmds_general_cmds_spawn_object: "Once you've read the spawn_object.txt, type your new command in GTA V's chat.",
-        gtav_cmds_general_cmds_spawn_ped_help: "(ped_name) - Type this command in terminal to learn more.",
-        gtav_cmds_general_cmds_spawn_ped: "Once you've read the spawn_ped.txt, type your new command in GTA V's chat.",
-        gtav_cmds_general_cmds_spawn_bodyguard_help: "(1-10) - Type this command to in terminal learn more.",
-        gtav_cmds_general_cmds_spawn_bodyguard: "Please type \"!spawn bodyguard (1-10)\" (without quoations or parentheses - only number) in GTA V's chat.",
+        gtav_cmds_general_cmds_spawn_vehicle_help: "Spawn Vehicle (vehicle_name)-Type this command in terminal to learn more.",
+        gtav_cmds_general_cmds_spawn_vehicle: "Once you've read the spawn_vechicle.txt, type this command in GTA V's chat.",
+        gtav_cmds_general_cmds_spawn_object_help: "Spawn Object (object_name) - Type this command in terminal to learn more.",
+        gtav_cmds_general_cmds_spawn_object: "Once you've read the spawn_object.txt, type the command in GTA V's chat.",
+        gtav_cmds_general_cmds_spawn_ped_help: "Spawn Ped (ped_name) - Type this command in terminal to learn more.",
+        gtav_cmds_general_cmds_spawn_ped: "Once you've read the spawn_ped.txt, type the command in GTA V's chat.",
+        gtav_cmds_general_cmds_spawn_bodyguard_help: "Spawn Bodyguard (1-10) - Type this command to in terminal learn more.",
         gtav_cmds_general_cmds_weapons_help: "Give all weapons to client. Type this command in terminal to learn more.",
-        gtav_cmds_general_cmds_weapons: "Please type \"!weapons\" in GTA V's chat to get ALL weapons.",
         gtav_cmds_general_cmds_info_end: "",
         /* GENERAL - END */
         /* VEHICLE - START */
         gtav_cmds_vehicle_cmds_help: "All GTA V Online commands, avalible now:",
         gtav_cmds_vehicle_cmds_info_start: "",
         gtav_cmds_vehicle_cmds_vehicle_upgrade_help: "Vehicle Upgrade - MUST BE IN VEHCILE - Causes the vehicle to upgrade.",
-        gtav_cmds_vehicle_cmds_vehicle_upgrade: "*MUST BE IN VEHICLE FOR COMMAND TO WORK* In GTA V's chat, please enter a vehicle and type \"!vehicle upgrade\" to upgrade the vehicle with all the options.",
         gtav_cmds_vehicle_cmds_vehicle_repair_help: "Vehicle Repair - MUST BE IN VEHCILE - Causes the vehicle to be repaired.",
-        gtav_cmds_vehicle_cmds_vehicle_repair: "*MUST BE IN VEHICLE FOR COMMAND TO WORK* In GTA V's chat, please enter a vehicle and type \"!vehicle repair\" to repair the vehicle's health.",
         gtav_cmds_vehicle_cmds_vehicle_boost_help: "Vehicle Boost - MUST BE IN VEHCILE - Causes the vehicle to boost.",
-        gtav_cmds_vehicle_cmds_vehicle_boost: "*MUST BE IN VEHICLE FOR COMMAND TO WORK* In GTA V's chat, please enter a vehicle and type \"!vehicle boost\" to boost the vehicle forward going to upwards of 150 mph.",
         gtav_cmds_vehicle_cmds_vehicle_jump_help: "Vehicle Jump - MUST BE IN VEHCILE - Cause the vehicle to jump.",
-        gtav_cmds_vehicle_cmds_vehicle_jump: "*MUST BE IN VEHICLE FOR COMMAND TO WORK* In GTA V's chat, please enter a vehicle and type \"!vehicle jump\" to cause the vehicle to launch into the air.",
         gtav_cmds_vehicle_cmds_info_end: "",
         /* VEHICLE - END */
         /* GLOBAL START */
         gtav_cmds_global_cmds_info_start: "",
         gtav_cmds_global_cmds_copsturnblind_help: "Cops Turn Blind Eye - Causes the client to be never wanted.",
-        gtav_cmds_global_cmds_copsturnblind: "Please type \"!copsturnblind (on/off)\" in GTA V's chat to recieve never wanted.",
         gtav_cmds_global_cmds_offtheradar_help: "Off The Radar - Causes the client to go off tha radar.",
-        gtav_cmds_global_cmds_offtheradar: "Please type \"!offtheradar (on/off)\" in GTA V's chat to go off the radar.", 
         gtav_cmds_global_cmds_info_end: "",
         /* GLOBAL END */
         /* WEATHER START */
         gtav_cmds_weather_cmds_info_start: "",
-        gtav_cmds_weather_cmds_weather_day_help: "Weather Day - Changes the time to daytime(12:00).",
-        gtav_cmds_weather_cmds_weather_day: "Please type \"!weather day\" in GTA V's chat to change the time to daytime(12:00).",
-        gtav_cmds_weather_cmds_weather_night_help: "Weather Night - Changes time to nighttime(00:00).",
-        gtav_cmds_weather_cmds_weather_night: "Please type \"!weather night\" in GTA V's chat to change the time to nighttime(00:00).",
+        gtav_cmds_weather_cmds_weather_day_help: "Weather Day - Changes the time to daytime(12:00)",
+        gtav_cmds_weather_cmds_weather_night_help: "Weather Night - Changes time to nighttime(00:00)",
         gtav_cmds_weather_cmds_weather_halloween_help: "Weather Halloween - Makes the weather spooky.",
-        gtav_cmds_weather_cmds_weather_halloween: "Please type \"!weather halloween\" in GTA V's chat to add a orange filter to your screen. During the day, you'll only have an orange filter. But at night, there will be the orange filter along with a heavy thunderstorm.",
         gtav_cmds_weather_cmds_weather_snow_help: "Weather Snow - Makes the weather snowing along with a foggy atmosphere.",
-        gtav_cmds_weather_cmds_weather_snow: "Please type \"!weather snow\" in GTA V's chat to make the weather start snowing along with creating snow on the ground, objacts, and vehicles. ", 
         gtav_cmds_weather_cmds_info_end: "",
         gtav_cmds_more_cmds: "",
         /* WEATHER END */
-        welcome: "Welcome to xReVoLT - iTheme's GTA V Modded Lobby Terminal Simulation! \n\n- Please take some time out to visit my website located in the bottom-right hand corner.\n- Enjoy browsing through the terminal simulator.\n\nIn order to get started, please type \"!setup\" next to guest@xrevoltithemedev.github.io below.",
+        welcome: "Welcome to xReVoLT - iTheme's GTA V Modded Lobby Console Simulation!\n\nPlease take some time out to visit my website located in the bottom-right hand corner.\nEnjoy browsing through the console simulator.\nIn order to get started, please type \"!setup\".",
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "Welcome.txt",
         invalid_command_message: "<value>: command not found.",
-        setup_message: "\nDownloading necessary terminal files... \n = 1% \n ======= 7% \n ============ 12% \n ===================== 21% \n ========================== 26% \n ================================== 34% \n =========================================== 43% \n ================================================== 50% \n ========================================================== 58% \n ============================================================================== 78% \n ============================================================================================ 92% \n ==================================================================================================== 100% \n Downloaded necessary terminal files... DONE! \n\n Unpacking necessary terminal files... \n = 1% \n===================================================================================================== 100% \n Connecting to session... DONE!!!\n Unpacking necessary terminal files...DONE! \n\nInstalling extension...\n = 1% \n ============================================== 45% \n===================================================================================================== 100% \nInstalling extension...\n = 0% \n===================================================================================================== 100%\n Connecting to session... DONE! \n Connecting to session... SUCCESS!\n\nTo skip the text loading animation, simply double-click the screen.\n\nPlease type \"!cmds\" in the terminal for a list of commands to use in GTA V Online in the terminal.\nPlease type \"!help\" in the terminal for a list of commands to use in the terminal simulation.\n",
+        setup_message: "\nDownloading necessary terminal files... \n = 1% \n ======= 7% \n ============ 12% \n ===================== 21% \n ========================== 26% \n ================================== 34% \n =========================================== 43% \n ================================================== 50% \n ========================================================== 58% \n ============================================================================== 78% \n ============================================================================================ 92% \n ==================================================================================================== 100% \n Downloaded necessary terminal files... DONE! \n\n Unpacking necessary terminal files... \n = 1% \n===================================================================================================== 100% \n Unpacking necessary terminal files...DONE! \n\nInstalling extension...\n = 1% \n ============================================== 45% \n===================================================================================================== 100% \nInstalling extension.... DONE! \n\nTo skip the text loading animation, simply double-click the screen.\n\nPlease type \"!cmds\" for a list of commands to use in GTA V Online.\nPlease type \"!help\" for a list of commands to use in the console simulation.\n",
         cmds_message: "\nThis is a test.\n",
         reboot_message: "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
         permission_denied_message: "Unable to '<value>', permission denied.",
@@ -104,9 +88,6 @@ var main = (function () {
         value_token: "<value>",
         host: "xrevoltithemedev.github.io",
         user: "guest",
-        changelog: "Changelog is avalible on the changelog.txt tab.",
-        version: "Build Version: 1.102 Alpha. Type \"!changelog\" for more information.",
-        github: "The project's source code is on the previous tab. Go there for more  information.",
         is_root: false,
         type_delay: 20
     };
@@ -126,7 +107,7 @@ var main = (function () {
             }
         };
         Singleton.defaultOptions = {
-            "About.txt": "This site was made for whenever you join a session that xReVoLT-iTheme is in,\n you might be gifted with a modded GTA V session! \n I have made this website so players can search for commands with ease in this terminal simulation.",
+            "About.txt": "This site was made for whenever you join a session that xReVoLT-iTheme is in,\n you might be gifted with a modded GTA V session! \n I have made this website so players can search for commands with ease in this console simulation.",
             "Help.txt": "For a list of commands, please type \"!help\".",
             "Contact.txt": "xrevoltithemedev@gmail.com",
             /*"Commands.txt": "Please fill up this section",*/
@@ -193,23 +174,11 @@ var main = (function () {
         DATE: { value: "!date", help: configs.getInstance().date_help },
         HELP: { value: "!help", help: configs.getInstance().help_help },
         SETUP: { value: "!setup", help: configs.getInstance().setup_help },
+        SPAWN_VEHICLE: { value: "!spawn_vehicle", help: configs.getInstance().cmds_help },
+        SPAWN_OBJECT: { value: "!spawn_object", help: configs.getInstance().cmds_help },
+        SPAWN_PED: { value: "!spawn_ped", help: configs.getInstance().cmds_help },
+        CHANGELOG: { value: "!changelog", help: configs.getInstance().cmds_help },
         CMDS: { value: "!cmds", help: configs.getInstance().cmds_help },
-        MONEY: { value: "!money", help: configs.getInstance().gtav_cmds_general_cmds_money_help },
-        SPAWN_VEHICLE: { value: "!spawn_vehicle", help: configs.getInstance().gtav_cmds_general_cmds_spawn_vehicle_help },
-        SPAWN_OBJECT: { value: "!spawn_object", help: configs.getInstance().gtav_cmds_general_cmds_spawn_object_help },
-        SPAWN_PED: { value: "!spawn_ped", help: configs.getInstance().gtav_cmds_general_cmds_spawn_ped_help },
-        SPAWN_BODYGUARD: { value: "!spawn_bodyguard", help: configs.getInstance().gtav_cmds_general_cmds_spawn_bodyguard_help },
-        WEAPONS: { value: "!weapons", help: configs.getInstance().gtav_cmds_general_cmds_weapons_help },
-        VEHICLE_UPGRADE: { value: "!vehicle_upgrade", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_upgrade_help },
-        VEHICLE_REPAIR: { value: "!vehicle_repair", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_repair_help },
-        VEHICLE_BOOST: { value: "!vehicle_boost", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_boost_help },
-        VEHICLE_JUMP: { value: "!vehicle_jump", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_jump_help },
-        COPSTURNBLIND: { value: "!copsturnblind", help: configs.getInstance().gtav_cmds_global_cmds_copsturnblind_help },
-        OFFTHERADAR: { value: "!offtheradar", help: configs.getInstance().gtav_cmds_global_cmds_offtheradar_help },
-        WEATHER_DAY: { value: "!weather_day", help: configs.getInstance().gtav_cmds_weather_cmds_weather_day_help },
-        WEATHER_NIGHT: { value: "!weather_night", help: configs.getInstance().gtav_cmds_weather_cmds_weather_night_help },
-        WEATHER_HALLOWEEN: { value: "!weather_halloween", help: configs.getInstance().gtav_cmds_weather_cmds_weather_halloween_help },
-        WEATHER_SNOW: { value: "!weather_snow", help: configs.getInstance().gtav_cmds_weather_cmds_weather_snow_help },
         CLEAR: { value: "!clear", help: configs.getInstance().clear_help },
         REBOOT: { value: "!reboot", help: configs.getInstance().reboot_help },
         CD: { value: "!cd", help: configs.getInstance().cd_help },
@@ -217,39 +186,79 @@ var main = (function () {
         RM: { value: "!rm", help: configs.getInstance().rm_help },
         RMDIR: { value: "!rmdir", help: configs.getInstance().rmdir_help },
         TOUCH: { value: "!touch", help: configs.getInstance().touch_help },
-        SUDO: { value: "!sudo", help: configs.getInstance().sudo_help },
-        VERSION: { value: "!version", help: configs.getInstance().version_help },
-        CHANGELOG: { value: "!changelog", help: configs.getInstance().changelog_help },
-        GITHUB: { value: "!github", help: configs.getInstance().github_help },
+        SUDO: { value: "!sudo", help: configs.getInstance().sudo_help }
     };
 
     var gtav_cmds_general_cmds = {
         GENERALSTART: { value: "============= GENERAL COMMANDS =============", help: configs.getInstance().gtav_cmds_general_cmds_info_start },
-        MONEY: { value: "!money", help: configs.getInstance().gtav_cmds_general_cmds_money_help },
-        SPAWNVEHICLE: { value: "!spawn_vehicle", help: configs.getInstance().gtav_cmds_general_cmds_spawn_vehicle_help },
-        SPAWNOBJECT: { value: "!spawn_object", help: configs.getInstance().gtav_cmds_general_cmds_spawn_object_help },
-        SPAWNPED: { value: "!spawn_ped", help: configs.getInstance().gtav_cmds_general_cmds_spawn_ped_help },
-        SPAWNBODYGUARD: { value: "!spawn_bodyguard", help: configs.getInstance().gtav_cmds_general_cmds_spawn_bodyguard_help },
+        MONEY: { value: "!money (on/off)", help: configs.getInstance().gtav_cmds_general_cmds_money_help },
+        SPAWNVEHICLE: { value: "!spawn vehicle (vehicle_name)", help: configs.getInstance().gtav_cmds_general_cmds_spawn_vehicle_help },
+        SPAWNOBJECT: { value: "!spawn object (object_name)", help: configs.getInstance().gtav_cmds_general_cmds_spawn_object_help },
+        SPAWNPED: { value: "!spawn ped (ped_name)", help: configs.getInstance().gtav_cmds_general_cmds_spawn_ped_help },
+        SPAWNBODYGUARD: { value: "!spawn bodyguard (1-10)", help: configs.getInstance().gtav_cmds_general_cmds_spawn_bodyguard_help },
         WEAPONS: { value: "!weapons", help: configs.getInstance().gtav_cmds_general_cmds_weapons_help },
         GENERALEND: { value: "============================================\n", help: configs.getInstance().gtav_cmds_general_cmds_info_end },
         VEHICLESTART: { value: "============= VEHICLE COMMANDS =============", help: configs.getInstance().gtav_cmds_vehicle_cmds_info_start },
-        VEHICLEUPGRADE: { value: "!vehicle_upgrade", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_upgrade_help },
-        VEHICLEREPAIR: { value: "!vehicle_repair", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_repair_help },
-        VEHICLEBOOST: { value: "!vehicle_boost", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_boost_help },
-        VEHICLEJUMP: { value: "!vehicle_jump", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_jump_help },
+        VEHICLEUPGRADE: { value: "!vehicle upgrade", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_upgrade_help },
+        VEHICLEREPAIR: { value: "!vehicle repair", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_repair_help },
+        VEHICLEBOOST: { value: "!vehicle boost", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_boost_help },
+        VEHICLEJUMP: { value: "!vehicle jump", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_jump_help },
         VEHICLEEND: { value: "============================================\n", help: configs.getInstance().gtav_cmds_vehicle_cmds_info_end },
         GLOBALSTART: { value: "============= GLOBAL COMMANDS ==============", help: configs.getInstance().gtav_cmds_global_cmds_info_start },
         COPSTURNBLIND: { value: "!copsturnblind", help: configs.getInstance().gtav_cmds_global_cmds_copsturnblind_help },
         OFFTHERADAR: { value: "!offtheradar", help: configs.getInstance().gtav_cmds_global_cmds_offtheradar_help },
         GLOBALEND: { value: "============================================\n", help: configs.getInstance().gtav_cmds_global_cmds_info_end },
         WEATHERSTART: { value: "============= WEATHER COMMANDS =============", help: configs.getInstance().gtav_cmds_weather_cmds_info_start },
-        WEATHERDAY: { value: "!weather_day", help: configs.getInstance().gtav_cmds_weather_cmds_weather_day_help },
-        WEATHERNIGHT: { value: "!weather_night", help: configs.getInstance().gtav_cmds_weather_cmds_weather_night_help },
-        WEATHERHALLOWEEN: { value: "!weather_halloween", help: configs.getInstance().gtav_cmds_weather_cmds_weather_halloween_help },
-        WEATHERSNOW: { value: "!weather_snow", help: configs.getInstance().gtav_cmds_weather_cmds_weather_snow_help },
+        WEATHERDAY: { value: "!weather day", help: configs.getInstance().gtav_cmds_weather_cmds_weather_day_help },
+        WEATHERNIGHT: { value: "!weather night", help: configs.getInstance().gtav_cmds_weather_cmds_weather_night_help },
+        WEATHERHALLOWEEN: { value: "!weather halloween", help: configs.getInstance().gtav_cmds_weather_cmds_weather_halloween_help },
+        WEATHERSNOW: { value: "!weather snow", help: configs.getInstance().gtav_cmds_weather_cmds_weather_snow_help },
         WEATHEREND: { value: "============================================\n", help: configs.getInstance().gtav_cmds_weather_cmds_info_end },
         MORECMDS: { value: "============================================\n===== WILL BE ADDING MORE COMMANDS SOON ====\n============================================", help: configs.getInstance().gtav_cmds_more_cmds },
     };
+
+    /*
+
+    OLD METHOD
+
+    var gtav_cmds_general_cmds = {
+        GENERALSTART: { value: "============= GENERAL COMMANDS =============", help: configs.getInstance().gtav_cmds_general_cmds_info_start },
+        MONEY: { value: "!money", help: configs.getInstance().gtav_cmds_general_cmds_money_help },
+        SPAWNVEHICLE: { value: "!spawn vehicle", help: configs.getInstance().gtav_cmds_general_cmds_spawn_vehicle_help },
+        SPAWNOBJECT: { value: "!spawn object", help: configs.getInstance().gtav_cmds_general_cmds_spawn_object_help },
+        SPAWNPED: { value: "!spawn ped", help: configs.getInstance().gtav_cmds_general_cmds_spawn_ped_help },
+        SPAWNBODYGUARD: { value: "!spawn bodyguard", help: configs.getInstance().gtav_cmds_general_cmds_spawn_bodyguard_help },
+        WEAPONS: { value: "!weapons", help: configs.getInstance().gtav_cmds_general_cmds_weapons_help },
+        GENERALEND: { value: "============================================", help: configs.getInstance().gtav_cmds_general_cmds_info_end },
+    };
+
+    var gtav_cmds_vehicle_cmds = {
+        VEHICLESTART: { value: "============= VEHICLE COMMANDS =============", help: configs.getInstance().gtav_cmds_vehicle_cmds_info_start },
+        VEHICLEUPGRADE: { value: "!vehicle upgrade", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_upgrade_help },
+        VEHICLEREPAIR: { value: "!vehicle repair", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_repair_help },
+        VEHICLEBOOST: { value: "!vehicle boost", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_boost_help },
+        VEHICLEJUMP: { value: "!vehicle jump", help: configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_jump_help },
+        VEHICLEEND: { value: "============================================", help: configs.getInstance().gtav_cmds_vehicle_cmds_info_end },
+    };
+
+    var gtav_cmds_global_cmds = {
+        GLOBALSTART: { value: "============= GLOBAL COMMANDS =============", help: configs.getInstance().gtav_cmds_global_cmds_info_start },
+        COPSTURNBLIND: { value: "!copsturnblind", help: configs.getInstance().gtav_cmds_global_cmds_copsturnblind_help },
+        OFFTHERADAR: { value: "!offtheradar", help: configs.getInstance().gtav_cmds_global_cmds_offtheradar_help },
+        GLOBALEND: { value: "============================================", help: configs.getInstance().gtav_cmds_global_cmds_info_end },
+    };
+
+    var gtav_cmds_weather_cmds = {
+        WEATHERSTART: { value: "============= WEATHER COMMANDS =============", help: configs.getInstance().gtav_cmds_weather_cmds_info_start },
+        WEATHERDAY: { value: "!weather day", help: configs.getInstance().gtav_cmds_weather_cmds_weather_day_help },
+        WEATHERNIGHT: { value: "!weather night", help: configs.getInstance().gtav_cmds_weather_cmds_weather_night_help },
+        WEATHERHALLOWEEN: { value: "!weather halloween", help: configs.getInstance().gtav_cmds_weather_cmds_weather_halloween_help },
+        WEATHERSNOW: { value: "!weather snow", help: configs.getInstance().gtav_cmds_weather_cmds_weather_snow_help },
+        WEATHEREND: { value: "============================================", help: configs.getInstance().gtav_cmds_weather_cmds_info_end },
+        MORECMDS: { value: "============================================\n==== WILL BE ADDING MORE COMMANDS SOON ====\n============================================", help: configs.getInstance().gtav_cmds_more_cmds },
+    };
+
+*/
 
     var Terminal = function (prompt, cmdLine, output, sidenav, gtavPic, user, host, root, outputTimer) {
         if (!(prompt instanceof Node) || prompt.nodeName.toUpperCase() !== "DIV") {
@@ -454,9 +463,6 @@ var main = (function () {
             case cmds.CMDS.value:
                 this.cmds();
                 break;
-            case cmds.MONEY.value:
-                this.money();
-                break;
             case cmds.SPAWN_VEHICLE.value:
                 this.spawn_vehicle();
                 break;
@@ -466,50 +472,8 @@ var main = (function () {
             case cmds.SPAWN_PED.value:
                 this.spawn_ped();
                 break;
-            case cmds.SPAWN_BODYGUARD.value:
-                this.spawn_bodyguard();
-                break;
-            case cmds.WEAPONS.value:
-                this.weapons();
-                break;
-            case cmds.VEHICLE_UPGRADE.value:
-                this.vehicle_upgrade();
-                break;
-            case cmds.VEHICLE_REPAIR.value:
-                this.vehicle_repair();
-                break;
-            case cmds.VEHICLE_BOOST.value:
-                this.vehicle_boost();
-                break;
-            case cmds.VEHICLE_JUMP.value:
-                this.vehicle_jump();
-                break;
-            case cmds.COPSTURNBLIND.value:
-                this.copsturnblind();
-                break;
-            case cmds.OFFTHERADAR.value:
-                this.offtheradar();
-                break;
-            case cmds.WEATHER_DAY.value:
-                this.weather_day();
-                break;
-            case cmds.WEATHER_NIGHT.value:
-                this.weather_night();
-                break;
-            case cmds.WEATHER_HALLOWEEN.value:
-                this.weather_halloween();
-                break;
-            case cmds.WEATHER_SNOW.value:
-                this.weather_snow();
-                break;
-            case cmds.VERSION.value:
-                this.version();
-                break;
             case cmds.CHANGELOG.value:
                 this.changelog();
-                break;
-            case cmds.GITHUB.value:
-                this.github();
                 break;
             case cmds.CLEAR.value:
                 this.clear();
@@ -587,11 +551,6 @@ var main = (function () {
         this.type(result.trim(), this.unlock.bind(this));
     };
     
-    Terminal.prototype.money = function () {
-        this.type(configs.getInstance().gtav_cmds_general_cmds_money, this.unlock.bind(this));
-        win.focus();
-    };
-
     Terminal.prototype.spawn_vehicle = function () {
         this.type(configs.getInstance().gtav_cmds_general_cmds_spawn_vehicle, this.unlock.bind(this));
         var win = window.open("https://xrevoltithemedev.github.io/gtav/names/vehicle_names.txt", '_blank');
@@ -610,80 +569,9 @@ var main = (function () {
         win.focus();
     };
 
-    Terminal.prototype.spawn_bodyguard = function () {
-        this.type(configs.getInstance().gtav_cmds_general_cmds_spawn_bodyguard, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.weapons = function () {
-        this.type(configs.getInstance().gtav_cmds_general_cmds_weapons, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.vehicle_upgrade = function () {
-        this.type(configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_upgrade, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.vehicle_repair = function () {
-        this.type(configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_repair, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.vehicle_boost = function () {
-        this.type(configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_boost, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.vehicle_jump = function () {
-        this.type(configs.getInstance().gtav_cmds_vehicle_cmds_vehicle_jump, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.copsturnblind = function () {
-        this.type(configs.getInstance().gtav_cmds_global_cmds_copsturnblind, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.offtheradar = function () {
-        this.type(configs.getInstance().gtav_cmds_global_cmds_offtheradar, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.weather_day = function () {
-        this.type(configs.getInstance().gtav_cmds_weather_cmds_weather_day, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.weather_night = function () {
-        this.type(configs.getInstance().gtav_cmds_weather_cmds_weather_night, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.weather_halloween = function () {
-        this.type(configs.getInstance().gtav_cmds_weather_cmds_weather_halloween, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.weather_snow = function () {
-        this.type(configs.getInstance().gtav_cmds_weather_cmds_weather_snow, this.unlock.bind(this));
-        win.focus();
-    };
-
-    Terminal.prototype.version = function () {
-        this.type(configs.getInstance().version, this.unlock.bind(this));
-        win.focus();
-    };
-
     Terminal.prototype.changelog = function () {
-        this.type(configs.getInstance().changelog, this.unlock.bind(this));
+        this.type(configs.getInstance().gtav_cmds_general, this.unlock.bind(this));
         var win = window.open("https://xrevoltithemedev.github.io/gtav/changelog.txt", '_blank');
-        win.focus();
-    };
-
-    Terminal.prototype.github = function () {
-        this.type(configs.getInstance().github, this.unlock.bind(this));
-        var win = window.open("https://github.com/xReVoLTiThemeDev/gtav", '_blank');
         win.focus();
     };
     

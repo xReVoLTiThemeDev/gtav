@@ -105,7 +105,7 @@ var main = (function () {
         host: "xrevoltithemedev.github.io",
         user: "guest",
         changelog: "Changelog is avalible on the changelog.txt tab.",
-        version: "Build Version: 1.102 Alpha. Type \"!changelog\" for more information.",
+        version: "Build Version: 1.101 Alpha. Type \"!changelog\" for more information.",
         github: "The project's source code is on the previous tab. Go there for more  information.",
         is_root: false,
         type_delay: 20
