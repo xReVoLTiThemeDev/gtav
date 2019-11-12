@@ -72,5 +72,6 @@
 11/10/2019 - 01:30:06
 
 - Added a version page(copy of terminal simulator)
+- Added more context on entering commands in cmd_help
 
 ==================================================================

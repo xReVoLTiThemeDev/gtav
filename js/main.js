@@ -33,7 +33,7 @@ var main = (function () {
         github_help: "The source code is avalible on GitHub.",
         version_help: "Displays the version of the project.",
         /* GENERAL - START */
-        gtav_cmds_general_cmds_help: "All GTA V Online commands, avalible now:",
+        gtav_cmds_general_cmds_help: "All GTA V Online commands, avalible now on the terminal simulator:\n\n*MUST TYPE THE COMMAND IN TERMINAL TO SEE COMMAND*\n\nFORMAT: COMMANDS - COMMANDS SUB - DESCRIPTION",
         gtav_cmds_general_cmds_info_start: "",
         gtav_cmds_general_cmds_money_help: "Spawn money bags with value of $2,500. Type this command in terminal to learn more.",
         gtav_cmds_general_cmds_money: "Please go to Los Santos Customs and type \"!money on\" in GTA V's chat. *MUST BE AT LSC FOR IT TO WORK*",
@@ -672,6 +672,7 @@ var main = (function () {
 
     Terminal.prototype.version = function () {
         this.type(configs.getInstance().version, this.unlock.bind(this));
+        var win = window.open("https://xrevoltithemedev.github.io/gtav/version/version.html", '_blank');
         win.focus();
     };
 
